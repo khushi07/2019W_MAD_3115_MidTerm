@@ -24,8 +24,9 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func RememberBtn(_ sender: UISwitch) {
+        
     }
-    
+
     @IBAction func LoginBtn(_ sender: UIButton) {
         if(EmailLbl.text == email && PasswordLbl.text == password)
         {
