@@ -17,6 +17,9 @@ class StudentResultViewController: UIViewController {
     }
     
 
+    @IBAction func BackBtn2(_ sender: UIButton) {
+        performSegue(withIdentifier: "back2", sender: self)
+    }
     /*
     // MARK: - Navigation
 

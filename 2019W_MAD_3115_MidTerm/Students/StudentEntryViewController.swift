@@ -9,23 +9,38 @@
 import UIKit
 
 class StudentEntryViewController: UIViewController {
-
    
+    
+    @IBOutlet weak var IdLbl: UITextField!
+    @IBOutlet weak var NameLbl: UITextField!
+    @IBOutlet weak var EmailLbl: UITextField!
+    @IBOutlet weak var marks1Lbl: UITextField!
+    @IBOutlet weak var marks2Lbl: UITextField!
+    @IBOutlet weak var marks3Lbl: UITextField!
+    @IBOutlet weak var marks4Lbl: UITextField!
+    @IBOutlet weak var marks5Lbl: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+ 
+   
+    @IBAction func genderBtn(_ sender: UISegmentedControl) {
+        
+    }
+    @IBAction func logoutBtn(_ sender: UIButton) {
+       
+           performSegue(withIdentifier: "logout", sender: self)
+        
+    }
+   
+    @IBAction func Date(_ sender: UIDatePicker) {
+        
+    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func NextBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "next", sender: self)
     }
-    */
-
 }
