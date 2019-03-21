@@ -8,6 +8,7 @@
 
 import UIKit
 
+var name = ["khushi","gurvinder","heena","amit","suraj"]
 class StudentEntryViewController: UIViewController {
    
     
@@ -19,6 +20,7 @@ class StudentEntryViewController: UIViewController {
     @IBOutlet weak var marks3Lbl: UITextField!
     @IBOutlet weak var marks4Lbl: UITextField!
     @IBOutlet weak var marks5Lbl: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +28,7 @@ class StudentEntryViewController: UIViewController {
     }
  
    
+    @IBOutlet weak var Subject: UIPickerView!
     @IBAction func genderBtn(_ sender: UISegmentedControl) {
         
     }
@@ -43,4 +46,5 @@ class StudentEntryViewController: UIViewController {
     @IBAction func NextBtn(_ sender: UIButton) {
         performSegue(withIdentifier: "next", sender: self)
     }
+
 }

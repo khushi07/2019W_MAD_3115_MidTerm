@@ -8,7 +8,8 @@
 
 import UIKit
 
-class StudentResultViewController: UIViewController {
+class StudentResultViewController: UIViewController
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,17 +18,18 @@ class StudentResultViewController: UIViewController {
     }
     
 
+    @IBOutlet weak var StdidLbl: UILabel!
+    @IBOutlet weak var StdNameLbl: UILabel!
+    @IBOutlet weak var StdGenderLbl: UILabel!
+    @IBOutlet weak var StdEmailLbl: UILabel!
+    @IBOutlet weak var StdBirthLbl: UILabel!
+    @IBOutlet weak var StdMarksLbl: UILabel!
+    @IBOutlet weak var StdPercentLbl: UILabel!
+    @IBOutlet weak var StdResultLbl: UILabel!
+    
+    
     @IBAction func BackBtn2(_ sender: UIButton) {
         performSegue(withIdentifier: "back2", sender: self)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
